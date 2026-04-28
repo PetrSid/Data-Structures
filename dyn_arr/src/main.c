@@ -4,13 +4,7 @@
 
 int main()
 {
-    array* arr = init_array(10);
-
-    set(arr, 0, 5);
-    int var = get(arr, 0);
-
-    arr = resize(arr, 15);
-    printf("%d", var);
+    struct dyn_arr* arr = init_array(10);
     
     remove_array(&arr);
     return 0;
